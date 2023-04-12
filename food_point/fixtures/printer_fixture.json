@@ -1,0 +1,62 @@
+[
+  {
+    "model": "food_point.Printer",
+    "pk": 1,
+    "fields": {
+      "name": "Canon",
+      "api_key": "aa17492dfd537785abfbb436b0290f78",
+      "check_type": "client",
+      "point_id": 1
+    }
+  },
+  {
+    "model": "food_point.Printer",
+    "pk": 2,
+    "fields": {
+      "name": "HP",
+      "api_key": "e5e58278792143d1114f667a33f4a385",
+      "check_type": "client",
+      "point_id": 2
+    }
+  },
+  {
+    "model": "food_point.Printer",
+    "pk": 3,
+    "fields": {
+      "name": "Epson",
+      "api_key": "287491c84d8c5090e7ed58352bc9d6f2",
+      "check_type": "client",
+      "point_id": 3
+    }
+  },
+  {
+    "model": "food_point.Printer",
+    "pk": 4,
+    "fields": {
+      "name": "Canon",
+      "api_key": "aa17492dfd537785abfbb546b0290f78",
+      "check_type": "kitchen",
+      "point_id": 1
+    }
+  },
+  {
+    "model": "food_point.Printer",
+    "pk": 5,
+    "fields": {
+      "name": "HP",
+      "api_key": "i5e58278792143d1114f667b33f4a385",
+      "check_type": "kitchen",
+      "point_id": 2
+    }
+  },
+  {
+    "model": "food_point.Printer",
+    "pk": 6,
+    "fields": {
+      "name": "Epson",
+      "api_key": "287401c84d8c5090e7kd58352bc9d6f2",
+      "check_type": "kitchen",
+      "point_id": 3
+    }
+  }
+]
