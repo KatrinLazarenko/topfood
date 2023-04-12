@@ -14,9 +14,3 @@ class CheckSerializer(serializers.ModelSerializer):
     class Meta:
         model = Check
         fields = '__all__'
-
-    # def validate(self, attrs):
-    #     order = attrs.get("order")
-    #     if Check.objects.filter(order=order).exists():
-    #         raise serializers.ValidationError("An order has already exists")
-    #     return attrs
