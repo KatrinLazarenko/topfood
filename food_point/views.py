@@ -16,7 +16,7 @@ class PrinterViewSet(viewsets.ModelViewSet):
 
 
 class CheckViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Check.objects.all().select_related("printer_id")
+    queryset = Check.objects.select_related("printer_id")
     serializer_class = CheckSerializer
 
     @action(detail=False, methods=["post"])
@@ -35,7 +35,10 @@ class CheckViewSet(viewsets.ReadOnlyModelViewSet):
                 instance_id = instance.pk
                 generate_pdf.delay(instance_id)
         else:
-            return Response(status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                f"No existing printers for point {point_id}",
+                status=status.HTTP_400_BAD_REQUEST
+            )
         return Response(request.data)
 
     @action(detail=False, methods=["get"])

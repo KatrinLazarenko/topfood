@@ -33,7 +33,7 @@ class Check(models.Model):
     type = models.CharField(max_length=10, choices=check_type_choice)
     order = models.JSONField()
     status = models.CharField(max_length=10, choices=check_status, default="new")
-    pdf_file = models.FileField(upload_to=pdf_path, blank=True, null=True)
+    pdf_file = models.FileField(upload_to=pdf_path)
 
     def __str__(self):
         return self.pdf_file.name
