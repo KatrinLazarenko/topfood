@@ -1,0 +1,14 @@
+attrs==22.2.0
+celery==5.2.7
+Django==4.1.7
+djangorestframework==3.14.0
+django-extensions==3.2.1
+django-filter==23.1
+drf_spectacular==0.26.1
+docker==6.0.1
+psycopg2==2.9.3
+psycopg2-binary==2.9.5
+PyYAML==6.0
+redis==4.5.4
+requests==2.28.2
+wkhtmltopdf==0.2
